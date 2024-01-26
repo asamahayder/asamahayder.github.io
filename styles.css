@@ -49,7 +49,7 @@ h1 {
     margin: 10px;
     cursor: pointer;
     position: relative;
-    width: 150px; /* Set a fixed width for each image item */
+    flex: 0 0 calc(33.33% - 20px); /* Set a percentage width for each image item with some margin */
 }
 
 .overlay {

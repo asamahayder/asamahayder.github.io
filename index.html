@@ -1,58 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
 
-</head>
-<body>
+    </head>
+    <body>
 
-    <div class="gallery">
-        <ul class="image-grid">
-            <!-- Inside the <ul> tag in the HTML file -->
-            <!-- Inside the <ul> tag in the HTML file -->
-            <li class="image-item">
-                <img src="assets/dogs.png" alt="Image 1">
-                <div class="overlay">
-                    <div class="overlay-text">Project 1</div>
-                </div>
-                <div class="image-description">
-                    <p>Description for Image 1.</p>
-                </div>
-            </li>
+        <div class="gallery">
+            <ul class="image-grid">
+                <!-- Inside the <ul> tag in the HTML file -->
+                <!-- Inside the <ul> tag in the HTML file -->
+                <li class="image-item">
+                    <img src="assets/dogs.png" alt="Image 1">
+                    <div class="overlay">
+                        <div class="overlay-text">Project 1</div>
+                    </div>
+                    <div class="image-description">
+                        <p>Description for Image 1.</p>
+                    </div>
+                </li>
 
-            <li class="image-item">
-                <img src="assets/front_and_back.png" alt="Image 1">
-                <div class="overlay">
-                    <div class="overlay-text">Project 1</div>
-                </div>
-                <div class="image-description">
-                    <p>Description for Image 2.</p>
-                </div>
-            </li>
-            <!-- Repeat this for each image in the "assets" folder -->
-        </ul>
-    </div>
-
-    <!-- Add this inside the <body> tag, after the .gallery div -->
-    <div id="overlay-container" class="overlay-container">
-        <span id="close-btn" class="close-btn">&times;</span>
-        <img id="enlarged-image" class="enlarged-image" src="" alt="Enlarged Image">
-        <div id="image-caption" class="overlay-text"></div>
-        <div id="prev-btn" class="arrow-btn">&lt;</div>
-        <div id="next-btn" class="arrow-btn">&gt;</div>
-        <!-- Inside the <div id="overlay-container" class="overlay-container"> in the HTML file -->
-        <!-- Inside the <div id="overlay-container" class="overlay-container"> in the HTML file -->
-        <div id="image-description-container" class="image-description-container">
-            <div id="image-description" class="overlay-text"></div>
+                <li class="image-item">
+                    <img src="assets/front_and_back.png" alt="Image 1">
+                    <div class="overlay">
+                        <div class="overlay-text">Project 1</div>
+                    </div>
+                    <div class="image-description">
+                        <p>Description for Image 2.</p>
+                    </div>
+                </li>
+                <!-- Repeat this for each image in the "assets" folder -->
+            </ul>
         </div>
 
+        <!-- Add this inside the <body> tag, after the .gallery div -->
+        <div id="overlay-container" class="overlay-container">
+            <span id="close-btn" class="close-btn">&times;</span>
+            <img id="enlarged-image" class="enlarged-image" src="" alt="Enlarged Image">
+            <div id="image-caption" class="overlay-text"></div>
+            <div id="prev-btn" class="arrow-btn">&lt;</div>
+            <div id="next-btn" class="arrow-btn">&gt;</div>
+            <!-- Inside the <div id="overlay-container" class="overlay-container"> in the HTML file -->
+            <!-- Inside the <div id="overlay-container" class="overlay-container"> in the HTML file -->
+            <div id="image-description-container" class="image-description-container">
+                <div id="image-description" class="overlay-text"></div>
+            </div>
 
 
-    </div>
 
-</body>
-</html>
+        </div>
+
+    </body>
+    </html>

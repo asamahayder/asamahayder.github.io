@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const imageCaption = document.getElementById("image-caption");
     const imageDescriptionContainer = document.getElementById("image-description-container");
     const imageDescription = document.getElementById("image-description");
-    const descriptionToggleBtn = document.getElementById("description-toggle-btn");
     const closeBtn = document.getElementById("close-btn");
     const prevBtn = document.getElementById("prev-btn");
     const nextBtn = document.getElementById("next-btn");
@@ -34,8 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
         showNextImage();
     });
 
-    descriptionToggleBtn.addEventListener("click", toggleDescription);
-
     function showOverlay(index) {
         currentImageIndex = index;
         const imagePath = imageItems[index].querySelector("img").src;
@@ -62,10 +59,5 @@ document.addEventListener("DOMContentLoaded", function () {
     function showNextImage() {
         currentImageIndex = (currentImageIndex + 1) % imageItems.length;
         showOverlay(currentImageIndex);
-    }
-
-    function toggleDescription() {
-        const descriptionDisplay = imageDescriptionContainer.style.display;
-        imageDescriptionContainer.style.display = (descriptionDisplay === "none") ? "block" : "none";
     }
 });

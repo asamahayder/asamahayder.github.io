@@ -1,4 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const continueBtn = document.getElementById("continue-btn");
+
+    continueBtn.addEventListener("click", function () {
+        // Redirect to the portfolio page
+        window.location.href = "portfolio.html"; // Change this to your portfolio page name
+    });
+
     const imageItems = document.querySelectorAll(".image-item");
     const overlayContainer = document.getElementById("overlay-container");
     const enlargedImage = document.getElementById("enlarged-image");
@@ -37,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const imageAlt = imageItems[index].querySelector("img").alt;
 
         enlargedImage.src = imagePath;
+        imageCaption.textContent = imageAlt; // This line is optional, you can remove it if not needed
         overlayContainer.style.display = "flex";
     }
 

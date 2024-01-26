@@ -36,20 +36,31 @@ h1 {
 }
 
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
-    max-width: 800px; /* Set a maximum width for the gallery */
-    margin: 0 auto; /* Center the gallery horizontally */
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.image-grid {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
 }
 
 .image-item {
-    list-style: none;
-    margin: 10px;
-    cursor: pointer;
     position: relative;
-    flex: 0 0 calc(33.33% - 20px); /* Set a percentage width for each image item with some margin */
+    overflow: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
 }
 
 .overlay {

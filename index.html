@@ -13,6 +13,7 @@
     <div class="gallery">
         <ul class="image-grid">
             <!-- Inside the <ul> tag in the HTML file -->
+            <!-- Inside the <ul> tag in the HTML file -->
             <li class="image-item">
                 <img src="assets/dogs.png" alt="Image 1">
                 <div class="overlay">
@@ -32,27 +33,7 @@
                     <p>Description for Image 2.</p>
                 </div>
             </li>
-
-            <li class="image-item">
-                <img src="assets/indhold.png" alt="Image 1">
-                <div class="overlay">
-                    <div class="overlay-text">Project 1</div>
-                </div>
-                <div class="image-description">
-                    <p>Description for Image 3.</p>
-                </div>
-            </li>
-
-            <li class="image-item">
-                <img src="assets/stick.png" alt="Image 1">
-                <div class="overlay">
-                    <div class="overlay-text">Project 1</div>
-                </div>
-                <div class="image-description">
-                    <p>Description for Image 4.</p>
-                </div>
-            </li>
-
+            <!-- Repeat this for each image in the "assets" folder -->
         </ul>
     </div>
 
@@ -63,6 +44,13 @@
         <div id="image-caption" class="overlay-text"></div>
         <div id="prev-btn" class="arrow-btn">&lt;</div>
         <div id="next-btn" class="arrow-btn">&gt;</div>
+        <!-- Inside the <div id="overlay-container" class="overlay-container"> in the HTML file -->
+        <div id="image-description-container" class="image-description-container">
+            <button id="description-toggle-btn" class="description-toggle-btn">Show/Hide Description</button>
+            <div id="image-description" class="overlay-text"></div>
+        </div>
+
+
     </div>
 
 </body>

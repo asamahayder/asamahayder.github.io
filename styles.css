@@ -40,6 +40,8 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px;
+    max-width: 800px; /* Set a maximum width for the gallery */
+    margin: 0 auto; /* Center the gallery horizontally */
 }
 
 .image-item {
@@ -47,6 +49,7 @@ h1 {
     margin: 10px;
     cursor: pointer;
     position: relative;
+    width: 150px; /* Set a fixed width for each image item */
 }
 
 .overlay {

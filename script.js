@@ -3,8 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const overlayContainer = document.getElementById("overlay-container");
     const enlargedImage = document.getElementById("enlarged-image");
     const imageCaption = document.getElementById("image-caption");
-    const imageDescriptionContainer = document.getElementById("image-description-container");
-    const imageDescription = document.getElementById("image-description");
     const closeBtn = document.getElementById("close-btn");
     const prevBtn = document.getElementById("prev-btn");
     const nextBtn = document.getElementById("next-btn");
@@ -37,18 +35,14 @@ document.addEventListener("DOMContentLoaded", function () {
         currentImageIndex = index;
         const imagePath = imageItems[index].querySelector("img").src;
         const imageAlt = imageItems[index].querySelector("img").alt;
-        const description = imageItems[index].querySelector(".image-description p").textContent;
 
         enlargedImage.src = imagePath;
         imageCaption.textContent = imageAlt;
-        imageDescription.innerHTML = `<p>${description}</p>`;
         overlayContainer.style.display = "flex";
-        imageDescriptionContainer.style.display = "block"; // Show the description container when an image is enlarged
     }
 
     function hideOverlay() {
         overlayContainer.style.display = "none";
-        imageDescriptionContainer.style.display = "none"; // Hide the description container when overlay is closed
     }
 
     function showPrevImage() {

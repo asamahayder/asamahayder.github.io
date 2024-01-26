@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
         imageCaption.textContent = imageAlt;
         imageDescription.innerHTML = `<p>${description}</p>`;
         overlayContainer.style.display = "flex";
-        imageDescriptionContainer.style.display = "block"; // Show the description container initially
+        imageDescriptionContainer.style.display = "block"; // Show the description container when an image is enlarged
     }
 
     function hideOverlay() {

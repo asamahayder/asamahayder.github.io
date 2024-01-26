@@ -146,3 +146,23 @@ body {
     transition: transform 0.3s ease;
 }
 
+/* Add this at the end of the styles.css file */
+
+#image-description-container {
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 80%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#image-description {
+    color: #fff;
+    margin-top: 10px;
+}
+

@@ -37,7 +37,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const imageAlt = imageItems[index].querySelector("img").alt;
 
         enlargedImage.src = imagePath;
-        imageCaption.textContent = imageAlt;
         overlayContainer.style.display = "flex";
     }
 

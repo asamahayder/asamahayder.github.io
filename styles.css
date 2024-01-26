@@ -166,3 +166,52 @@ body {
     margin-top: 10px;
 }
 
+/* Add this at the end of the styles.css file */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden; /* Prevent scrollbar on the welcome page */
+}
+
+.welcome-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #3498db, #87CEFA); /* Blue to lightblue gradient */
+    color: #fff;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.continue-btn {
+    padding: 10px 20px;
+    font-size: 1.5em;
+    background: #fff;
+    color: #3498db;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.continue-btn:hover {
+    background: #3498db;
+    color: #fff;
+}
+
+/* Rest of your existing styles for the portfolio page */
+
+.gallery {
+    /* ... (your existing styles) */
+}
+
+/* ... (your existing styles) */
+
+
+

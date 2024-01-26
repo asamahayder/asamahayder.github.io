@@ -1,31 +1,17 @@
+<!-- Save this as index.html or your desired main page name -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Portfolio</title>
+    <title>Welcome to My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
 
-    <div class="gallery">
-        <ul class="image-grid">
-            <li class="image-item">
-                <img src="assets/dogs.png" alt="Image 1">
-                <div class="overlay">
-                    <div class="overlay-text">Project 1</div>
-                </div>
-            </li>
-
-            <li class="image-item">
-                <img src="assets/front_and_back.png" alt="Image 1">
-                <div class="overlay">
-                    <div class="overlay-text">Project 2</div>
-                </div>
-            </li>
-            <!-- Repeat this for each image in the "assets" folder -->
-        </ul>
+    <div class="welcome-page">
+        <h1>Welcome to My Portfolio</h1>
+        <button id="continue-btn" class="continue-btn">Continue</button>
     </div>
 
     <div id="overlay-container" class="overlay-container">
@@ -36,5 +22,6 @@
         <div id="next-btn" class="arrow-btn">&gt;</div>
     </div>
 
+    <script src="script.js" defer></script>
 </body>
 </html>

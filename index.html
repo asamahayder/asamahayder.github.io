@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
 </head>
 <body>
 
@@ -38,10 +40,21 @@
                     <div class="overlay-text">Project 1</div>
                 </div>
             </li>
-            <!-- Repeat this for each image in the "assets" folder -->
 
         </ul>
     </div>
+
+    <!-- Add this inside the <body> tag, after the .gallery div -->
+    <div id="overlay-container" class="overlay-container">
+        <span id="close-btn" class="close-btn">&times;</span>
+        <img id="enlarged-image" class="enlarged-image" src="" alt="Enlarged Image">
+        <div id="image-caption" class="overlay-text"></div>
+        <div id="prev-btn" class="arrow-btn">&lt;</div>
+        <div id="next-btn" class="arrow-btn">&gt;</div>
+    </div>
+
+
+
 
 </body>
 </html>

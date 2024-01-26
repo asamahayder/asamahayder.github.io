@@ -21,8 +21,15 @@ document.addEventListener("DOMContentLoaded", function () {
         event.stopPropagation();
     });
 
-    prevBtn.addEventListener("click", showPrevImage);
-    nextBtn.addEventListener("click", showNextImage);
+    prevBtn.addEventListener("click", function (event) {
+        event.stopPropagation();
+        showPrevImage();
+    });
+
+    nextBtn.addEventListener("click", function (event) {
+        event.stopPropagation();
+        showNextImage();
+    });
 
     function showOverlay(index) {
         currentImageIndex = index;
